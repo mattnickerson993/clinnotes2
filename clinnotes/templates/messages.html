@@ -1,0 +1,53 @@
+{% if messages %}
+    {% for message in messages %}
+    <div id="message-container" class="p-4 border-l-4 flex justify-between
+    {% if message.tags == "success" %}
+    bg-green-50 border-green-40
+    {% elif message.tags == 'info' %}
+    bg-blue-50 border-blue-40
+    {% elif message.tags == 'warning' %}
+    bg-yellow-50 border-yellow-40
+    {% else %}
+    bg-red-50 red-40
+    {% endif %}
+    ">
+        <p class="text-sm
+            {% if message.tags == "success" %}
+                text-green-700
+            {% elif message.tags == 'info' %}
+                text-blue-700
+            {% elif message.tags == 'warning' %}
+                text-yellow-700
+            {% else %}
+                text-red-700
+            {% endif %}
+        ">
+            {{message}}
+        </p>
+        <span id="close-message" class="text-3xl cursor-pointer font-bold
+        {% if message.tags == "success" %}
+                text-green-700
+        {% elif message.tags == 'info' %}
+                text-blue-700
+        {% elif message.tags == 'warning' %}
+                text-yellow-700
+        {% else %}
+                text-red-700
+        {% endif %}
+        ">
+        &times;
+        </span>
+    </div>
+    {% endfor %}
+{% else %}
+{% endif %}
+<script>
+   const messageCloseBtn = document.getElementById('close-message')
+   const wholeMessage = document.getElementById('message-container')
+   if (wholeMessage){
+       messageCloseBtn.onclick = () => {
+           wholeMessage.classList.add('hidden')
+   }    
+   }
+   
+</script

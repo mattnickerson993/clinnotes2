@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="w-4/5 mx-auto mt-2">
+    <h2 class="mx-auto text-center text-3xl mb-10 font-bold"> Frustrated with Patient Care ? </h2>
+    <div class="text-2xl p-10 border-4 mt-4 border-indigo-600 rounded-3xl">
+    <p class="m-2 mb-10 leading-relaxed">
+        As as I former clinician. I know all too well how frustrating patient care can be. You're expected to 
+        take phone calls, treat multiple patients at once, manage cancellations and late arrivals, and write error
+        free documentation, all while delivering strong outcomes and satisfaction. I always wished I had a tool to 
+        help me focus quickly amongst the chaos.
+    </p>
+    <p class="mx-2 my-10 leading-relaxed">
+        ClinNotes was designed with the above scenario in mind. Whether you're rattled from something earlier in
+        the day, or just havent seen a scheduled patient for a few weeks. Clinnotes allows clincians to record and 
+        store patient and episode of care specific reflections and reminders. A glance at these prior to a patient
+        visit can quickly refresh your memory about relevant patient details that you've specifically set. This way
+        you no longer have to look back and read your previous notes and documentation as we all know it is optimized
+        for billing and litigation, not skill acquisition and patient care.
+    </p>
+    <a href="{% url 'users:clinician-episodes' %}" class="text-white bg-indigo-600 hover:bg-indigo-400 inline-block rounded px-4 py-3 rounded">Get Started</a>
+</div>
+    
+</div>
+
+
+{% endblock content %}

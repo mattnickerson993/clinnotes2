@@ -1,0 +1,63 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>{% block title %}ClinNotes{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Clinnotes project version 1" />
+    <meta name="author" content="Matt Nickerson" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/styles.css' %}"
+      type="text/css"
+    />
+
+    <style>
+    [x-cloak] { display:none; }
+    </style>
+    {% block css %}
+    <!-- This file stores project-specific CSS -->
+    <link href="{% static 'css/project.css' %}" rel="stylesheet" />
+    
+    {% endblock %}
+    <!-- Le javascript
+		================================================== -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    {% block javascript %}
+    <script defer src="{% static 'js/project.js' %}"></script>
+    <script src="https://kit.fontawesome.com/8bed540fd4.js" crossorigin="anonymous"></script>
+    {% endblock javascript %}
+  </head>
+
+  <body>
+    <div class="min-h-screen bg-white">
+      {% include "navbar.html" %}
+      <div class="py-10">
+        <main>
+          <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            {% include 'messages.html' %}
+            <div class="px-4 py-8 sm:px-0">
+              {% block content %}
+              <p>Use this document as a way to quick start any new project.</p>
+              {% endblock content %}
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    {% block modal %}{% endblock modal %} 
+	{% block inline_javascript %} 
+	{# Script tags with only code, no src (defer by default) #} 
+	{% endblock inline_javascript %}
+  </body>
+</html>

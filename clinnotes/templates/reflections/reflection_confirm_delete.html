@@ -1,0 +1,22 @@
+{% extends "account/base.html" %}
+
+{% load crispy_forms_tags %}
+{% load tailwind_filters %}
+
+{% block head_title %}Confirm Delete{% endblock %}
+
+{% block content %}
+    
+        <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-lg">
+            <div class="py-8 px-4 sm:rounded-lg sm:px-10">
+                <div class="mt-4">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <p class="mb-4 font-bold text-center">Are you sure you want to delete this reflection?</p>
+                        <button class="text-white bg-red-400 hover:bg-red-300 rounded px-3 py-1 w-full" type="submit">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

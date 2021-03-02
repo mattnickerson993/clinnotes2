@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=clinnotes
+POSTGRES_USER=jabqhFTvUHUMLvQzKXlRbfKIHTTzZwNt
+POSTGRES_PASSWORD=Nti4NqXrVvz1pdUcB2HefGEZIUcYaHsbQuTYzpvlFsQ56nWh9srYourvsVrmU9Uf

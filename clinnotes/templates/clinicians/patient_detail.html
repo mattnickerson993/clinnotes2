@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <h1 class="title-font sm:text-5xl text-4xl mb-10 font-medium text-gray-900 border-b-2 border-gray-300">Patient Details</h1>
+    <div class="text-center lg:w-2/3 w-full">
+      <h1 class="title-font sm:text-3xl text-2xl mb-4 font-medium text-gray-900">{{object.first_name}} {{object.last_name}}</h1>
+      <p class="mb-8 leading-relaxed">{{object.condition}}</p>
+      <p class="mb-8 leading-relaxed">{{object.email}}</p>
+
+      <p class="mb-8 leading-relaxed">{% if object.notes %}{{object.notes}}{% else%} No notes at this time{% endif %}</p>
+      <div class="flex justify-center">
+        <a href="{% url 'users:clinician-patient-update' object.pk %}"class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Edit</a>
+        <a href="{% url 'users:clinician-patient-delete' object.pk %}"class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Delete</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

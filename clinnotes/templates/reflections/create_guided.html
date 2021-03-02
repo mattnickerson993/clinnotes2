@@ -1,0 +1,47 @@
+{% extends "account/base.html" %}
+
+{% load crispy_forms_tags %}
+{% load tailwind_filters %}
+
+{% block head_title %}Create{% endblock %}
+
+{% block content %}
+
+
+            
+        
+
+        <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-lg">
+            
+            <div class="py-8 px-4 sm:rounded-lg sm:px-10">
+                <div class="mt-4">
+                    <button id="revealBtn" class="mb-3 text-white bg-green-400 hover:bg-green-300 round px-3 py-1 rounded"> Reveal Questions </button>
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <button class="text-white bg-blue-400 hover:bg-blue-300 rounded px-3 py-1 w-full" type="submit"> Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block inline_javascript %}
+    <script type="text/javascript">
+    const question1= document.getElementById('guided1')
+    const question2= document.getElementById('guided2')
+    const question3= document.getElementById('guided3')
+    const questions = [question1, question2, question3]
+    const revealBtn = document.getElementById('revealBtn')
+    revealBtn.addEventListener('click', function(){
+        console.log('working')
+        questions.forEach(question => {
+            question.classList.toggle('invisible')
+        })
+    })
+    
+   
+    
+    </script>
+{% endblock inline_javascript%}
