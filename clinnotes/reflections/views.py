@@ -171,6 +171,7 @@ class SuccessView(TemplateView):
 @login_required
 def stripe_checkout_session(request):
 
+    DOMAIN="https://fierce-sierra-99431.herokuapp.com/"
     if settings.DEBUG:
         DOMAIN = 'http://127.0.0.1:8000'
 
