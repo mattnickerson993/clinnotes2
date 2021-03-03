@@ -274,3 +274,6 @@ clinnotes/media/
 .env
 .envs/*
 !.envs/.local/
+
+.ngrok
+ngrok
