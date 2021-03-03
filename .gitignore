@@ -276,4 +276,5 @@ clinnotes/media/
 !.envs/.local/
 
 .ngrok
+ngrok/
 ngrok
