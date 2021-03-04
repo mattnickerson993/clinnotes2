@@ -28,12 +28,15 @@ Basic Commands
 About the Project
 ^^^^^^^^^^^^^^^^^^^^^
 Project is built with Django and uses Django allauth for authentication, including option for social authentication with google or amazon. Stripe
-is used for processes payments for upgrading to additional features. CSS tailwind is used for styling. Django cookie cutter was used to build project.
-Tutorials from Matthew Freire 
+is used for processing payments for upgrading to additional features. CSS tailwind is used for styling. Django cookie cutter was used to build project.
+
 
 Django all auth : https://django-allauth.readthedocs.io/en/latest/installation.html
+
 Stripe : https://stripe.com/docs
+
 Tailwind : https://tailwindcss.com/docs
+
 Tutorials from Matthew Freire were instrumental in learning stripe and tailwind to assist in development. : https://justdjango.com/
 
 If you'd like to run the project locally
@@ -43,7 +46,6 @@ If you'd like to run the project locally
 * run pip install -r requirements/local.txt
 * create a postgres database via the following commands::
     $ createdb your_database_name_here
-    --- enter  psql
     $ CREATE USER your_username_here WITH PASSWORD 'your_password_here';
     $ GRANT ALL PRIVILEGES ON DATABASE your_database_name_here TO your_username_here;
 * configure .env file (see .sample_dot_env_file)
