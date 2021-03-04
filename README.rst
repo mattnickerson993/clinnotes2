@@ -1,7 +1,8 @@
 clinnotes
 =========
 
-Behold My Awesome Project!
+Clinnotes is a project designed to help clinicians (doctors, therapists ect) manage patient care through reflections and reminders
+they can tag to a patients episode of care.
 
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter
      :target: https://github.com/pydanny/cookiecutter-django/
@@ -23,6 +24,32 @@ Moved to settings_.
 
 Basic Commands
 --------------
+
+About the Project
+^^^^^^^^^^^^^^^^^^^^^
+Project is built with Django and uses Django allauth for authentication, including option for social authentication with google or amazon. Stripe
+is used for processes payments for upgrading to additional features. CSS tailwind is used for styling. Django cookie cutter was used to build project.
+Tutorials from Matthew Freire 
+
+Django all auth : https://django-allauth.readthedocs.io/en/latest/installation.html
+Stripe : https://stripe.com/docs
+Tailwind : https://tailwindcss.com/docs
+Tutorials from Matthew Freire were instrumental in learning stripe and tailwind to assist in development. : https://justdjango.com/
+
+If you'd like to run the project locally
+^^^^^^^^^^^^^^^^^^^^^
+* create a virtial environment
+* clone repository
+* run pip install -r requirements/local.txt
+* create a postgres database via the following commands::
+    $ createdb your_database_name_here
+    --- enter  psql
+    $ CREATE USER your_username_here WITH PASSWORD 'your_password_here';
+    $ GRANT ALL PRIVILEGES ON DATABASE your_database_name_here TO your_username_here;
+* configure .env file (see .sample_dot_env_file)
+* run migrations
+* run server ( all-auth ( google and amazon login) and stripe will need additional configuration but the rest of the site will work )
+
 
 Setting Up Your Users
 ^^^^^^^^^^^^^^^^^^^^^
