@@ -46,8 +46,11 @@ If you'd like to run the project locally
 * run pip install -r requirements/local.txt
 * create a postgres database via the following commands::
     $ createdb your_database_name_here
+
     $ CREATE USER your_username_here WITH PASSWORD 'your_password_here';
+
     $ GRANT ALL PRIVILEGES ON DATABASE your_database_name_here TO your_username_here;
+    
 * configure .env file (see .sample_dot_env_file)
 * run migrations
 * run server ( all-auth ( google and amazon login) and stripe will need additional configuration but the rest of the site will work )
