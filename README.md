@@ -8,7 +8,7 @@ Clinnotes is a project designed to help clinicians (doctors, therapists ect) man
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-##How it works:
+## How it works:
 - Clinician creates an account
 - Clinician may create patients and episode of cares on webapp
 - Clinician has ability to create, access, update and delete reflections or reminders for a specific patient in a given care episode.
@@ -17,17 +17,15 @@ Clinnotes is a project designed to help clinicians (doctors, therapists ect) man
 - Ideally the clinician can use the webapp as a quick refresher to prior to a visit or as a way to reflect on patient care to improve abilities
 - The clinician may upgrade to  guided reflection access through a one time payment which will prompt the clinician with specific ideas or questions to reflect on (just a demo---you wont actually be charged)
 
+## Tech Stack Used:
+- Django
+- Django all auth : https://django-allauth.readthedocs.io/en/latest/installation.html
+- Stripe : https://stripe.com/docs
+- Tailwind : https://tailwindcss.com/docs
+- Django Cookie Cutter
+- Tutorials from Matthew Freire were instrumental in learning stripe and tailwind to assist in development. : https://justdjango.com/
 
-Django all auth : https://django-allauth.readthedocs.io/en/latest/installation.html
-
-Stripe : https://stripe.com/docs
-
-Tailwind : https://tailwindcss.com/docs
-
-Tutorials from Matthew Freire were instrumental in learning stripe and tailwind to assist in development. : https://justdjango.com/
-
-If you'd like to run the project locally
-^^^^^^^^^^^^^^^^^^^^^
+## How to run Locally: 
 * create a virtial environment
 * clone repository
 * run pip install -r requirements/local.txt
