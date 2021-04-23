@@ -4,16 +4,9 @@ ClinNotes
 ## About
 Clinnotes is a project designed to help clinicians (doctors, therapists ect) manage patient care through reflections and reminders they can tag to a patient's episode of care. As a clinician it is not uncommon to have patients who make visits infrequently for various reasons. If one is practicing in a clinical environment that is busy and hectic it can be difficult to recall all patient details prior to a scheduled appointment, thus harming quality of care. Ideally, looking back at past visit notes could easily solve this. However, clinicians are trained and incentivized to write these visit notes in a way that optimizes billing and minimizes risk of litigation. This does not equate to accurate or helpful reflection or note taking. This is compounded by the plethora of tasks clinicians must complete in addition to seeing between 15-30 patients daily in some instances. As a practicing physical therapist I often tried to solve this issue with post it notes, which for numerous reasons may not be ideal. ClinNotes was designed to make this process easier and more organized for patients.
 
+[![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/pydanny/cookiecutter-django/)
 
-.. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter
-     :target: https://github.com/pydanny/cookiecutter-django/
-     :alt: Built with Cookiecutter Django
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-     :target: https://github.com/ambv/black
-     :alt: Black code style
-
-
-:License: MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ##How it works:
 - Clinician creates an account
@@ -23,15 +16,6 @@ Clinnotes is a project designed to help clinicians (doctors, therapists ect) man
 - Reminders related details that are relevant to a specific patients
 - Ideally the clinician can use the webapp as a quick refresher to prior to a visit or as a way to reflect on patient care to improve abilities
 - The clinician may upgrade to  guided reflection access through a one time payment which will prompt the clinician with specific ideas or questions to reflect on (just a demo---you wont actually be charged)
-
-
-Basic Commands
---------------
-
-About the Project
-^^^^^^^^^^^^^^^^^^^^^
-Project is built with Django and uses Django allauth for authentication, including option for social authentication with google or amazon. Stripe
-is used for processing payments for upgrading to additional features. CSS tailwind is used for styling. Django cookie cutter was used to build project.
 
 
 Django all auth : https://django-allauth.readthedocs.io/en/latest/installation.html
