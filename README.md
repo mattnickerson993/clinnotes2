@@ -85,6 +85,9 @@ Deployment
 - I used Django cookie cutter for the first time during this project and found it very convenient and effective. However, I eventually discovered that is a great tool if and only if you understand everything it is doing for you. This caused me to struggle in future projects and modify my use for the time being
 
 
+## Timeline
+- Project completed mid February - Early March 2021
+
 
 
 
