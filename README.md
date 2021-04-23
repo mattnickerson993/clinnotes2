@@ -10,12 +10,12 @@ Clinnotes is a project designed to help clinicians (doctors, therapists ect) man
 
 ## How it works:
 - Clinician creates an account
-- Clinician may create patients and episode of cares on webapp
+- Clinician may create patients and episode of care on webapp
 - Clinician has ability to create, access, update and delete reflections or reminders for a specific patient in a given care episode.
-- Reflections related to how the clinician may improve there ability to provide care
-- Reminders related details that are relevant to a specific patients
-- Ideally the clinician can use the webapp as a quick refresher to prior to a visit or as a way to reflect on patient care to improve abilities
-- The clinician may upgrade to  guided reflection access through a one time payment which will prompt the clinician with specific ideas or questions to reflect on (just a demo---you wont actually be charged)
+- Reflections relate to how the clinician may improve there ability to provide care
+- Reminders relate to details that are relevant to specific patients
+- Ideally the clinician can use the webapp as a quick refresher prior to a visit or as a way to reflect on patient care to improve abilities
+- The clinician may upgrade to guided reflection access through a one time payment which will prompt the clinician with specific ideas or questions to reflect on (just a demo---you wont actually be charged)
 
 ## Tech Stack Used:
 - Django
