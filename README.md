@@ -1,7 +1,7 @@
 ClinNotes
 =========
 
-##About
+## About
 Clinnotes is a project designed to help clinicians (doctors, therapists ect) manage patient care through reflections and reminders they can tag to a patient's episode of care. As a clinician it is not uncommon to have patients who make visits infrequently for various reasons. If one is practicing in a clinical environment that is busy and hectic it can be difficult to recall all patient details prior to a scheduled appointment, thus harming quality of care. Ideally, looking back at past visit notes could easily solve this. However, clinicians are trained and incentivized to write these visit notes in a way that optimizes billing and minimizes risk of litigation. This does not equate to accurate or helpful reflection or note taking. This is compounded by the plethora of tasks clinicians must complete in addition to seeing between 15-30 patients daily in some instances. As a practicing physical therapist I often tried to solve this issue with post it notes, which for numerous reasons may not be ideal. ClinNotes was designed to make this process easier and more organized for patients.
 
 
