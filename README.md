@@ -1,6 +1,9 @@
 ClinNotes
 =========
 
+## Demo Site
+[ClinNotes](https://fierce-sierra-99431.herokuapp.com/)
+
 ## About
 Clinnotes is a project designed to help clinicians (doctors, therapists ect) manage patient care through reflections and reminders they can tag to a patient's episode of care. As a clinician it is not uncommon to have patients who make visits infrequently for various reasons. If one is practicing in a clinical environment that is busy and hectic it can be difficult to recall all patient details prior to a scheduled appointment, thus harming quality of care. Ideally, looking back at past visit notes could easily solve this. However, clinicians are trained and incentivized to write these visit notes in a way that optimizes billing and minimizes risk of litigation. This does not equate to accurate or helpful reflection or note taking. This is compounded by the plethora of tasks clinicians must complete in addition to seeing between 15-30 patients daily in some instances. As a practicing physical therapist I often tried to solve this issue with post it notes, which for numerous reasons may not be ideal. ClinNotes was designed to make this process easier and more organized for patients.
 
@@ -65,20 +68,13 @@ For convenience, you can keep your normal user logged in on Chrome and your supe
 Deployment
 ----------
 
-The following details how to deploy this application.
-
-
 ## Heroku
-
-See detailed `cookiecutter-django Heroku documentation`_.
-
-.. _`cookiecutter-django Heroku documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html
+- `cookiecutter-django Heroku documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html
 
 
+## Reflection
 
-##Reflection
-
-###The Good/ My growth:
+### The Good/ My growth:
 - Implementing DjangoAllAuth, allowing user to login via email and password only, rather than having to create a username.
 - Social Authentication ability through Google or amazon as a login option.
 - Integration of Stripe and Stripe webhooks for the ability to upgrade to expanded content on the app
@@ -86,7 +82,7 @@ See detailed `cookiecutter-django Heroku documentation`_.
 - Use of Django cookie cutter for more efficient development locally and in production
 - Use of tailwind CSS for improved styling and more efficient development
 
-###The Bad/Areas to improve:
+### The Bad/Areas to improve:
 - No test coverage during development
 - I used Django cookie cutter for the first time during this project and found it very convenient and effective. However, I eventually discovered that is a great tool if and only if you understand everything it is doing for you. This caused me to struggle in future projects and modify my use for the time being
 
