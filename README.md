@@ -62,18 +62,34 @@ $ createdb your_database_name_here
 For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
 
 
-
 Deployment
 ----------
 
 The following details how to deploy this application.
 
 
-##Heroku
+## Heroku
 
 See detailed `cookiecutter-django Heroku documentation`_.
 
 .. _`cookiecutter-django Heroku documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-on-heroku.html
+
+
+
+##Reflection
+
+###The Good/ My growth:
+- Implementing DjangoAllAuth, allowing user to login via email and password only, rather than having to create a username.
+- Social Authentication ability through Google or amazon as a login option.
+- Integration of Stripe and Stripe webhooks for the ability to upgrade to expanded content on the app
+- Heavy use of Class based views for less complex and more readable code
+- Use of Django cookie cutter for more efficient development locally and in production
+- Use of tailwind CSS for improved styling and more efficient development
+
+###The Bad/Areas to improve:
+- No test coverage during development
+- I used Django cookie cutter for the first time during this project and found it very convenient and effective. However, I eventually discovered that is a great tool if and only if you understand everything it is doing for you. This caused me to struggle in future projects and modify my use for the time being
+
 
 
 
