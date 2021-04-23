@@ -29,12 +29,22 @@ Clinnotes is a project designed to help clinicians (doctors, therapists ect) man
 * create a virtial environment
 * clone repository
 * run pip install -r requirements/local.txt
-* create a postgres database via the following commands::
-    $ createdb your_database_name_here
+* You will need postgres installed....create a postgres database via the following command (if not you can use SQLITE3):
 
-    $ CREATE USER your_username_here WITH PASSWORD 'your_password_here';
+```
+$ createdb your_database_name_here
+```
 
-    $ GRANT ALL PRIVILEGES ON DATABASE your_database_name_here TO your_username_here;
+- Configure the postgres database for running application and tests ( inside psql)
+
+```
+    postgres=# CREATE USER your_username_here WITH PASSWORD 'your_password_here';
+
+    postgres=# GRANT ALL PRIVILEGES ON DATABASE your_database_name_here TO your_username_here;
+    
+    postgres=# ALTER ROLE your_username_here CREATEDB;
+ ```
+    
     
 * configure .env file (see .sample_dot_env_file)
 * run migrations
