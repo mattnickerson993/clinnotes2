@@ -29,7 +29,7 @@ Clinnotes is a project designed to help clinicians (doctors, therapists ect) man
 - Tutorials from Matthew Freire were instrumental in learning stripe and tailwind to assist in development. : https://justdjango.com/
 
 ## How to run Locally: 
-* create a virtial environment
+* create a virtual environment
 * clone repository
 * run pip install -r requirements/local.txt
 * You will need postgres installed....create a postgres database via the following command (if not you can use SQLITE3):
